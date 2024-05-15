@@ -1,22 +1,39 @@
-# SDP-SSP-Compose-Multiplatform
+package network.chaintech.sdpcomposemultiplatformdemo
 
-A scalable size unit for Compose Multiplatform for Android & iOS App
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.statusBarsPadding
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import network.chaintech.sdpcomposemultiplatform.sdp
+import network.chaintech.sdpcomposemultiplatform.ssp
+import network.chaintech.sdpcomposemultiplatformdemo.theme.AppTheme
+import org.jetbrains.compose.resources.painterResource
+import sdp_compose_multiplatform_demo.composeapp.generated.resources.Res
+import sdp_compose_multiplatform_demo.composeapp.generated.resources.ic_user
+import sdp_compose_multiplatform_demo.composeapp.generated.resources.img_jetpack_compose
 
-## Installation
-
-Add the dependency to your `build.gradle.kts` file:
-
-```
-commonMain.dependencies {
-    implementation("network.chaintech:sdp-ssp-compose-multiplatform:1.0.1")
-}
-```
-
-## Usage
-
-```kotlin
 @Composable
-fun App() = AppTheme {
+internal fun App() = AppTheme {
     Box(
         modifier = Modifier
             .statusBarsPadding()
@@ -79,22 +96,6 @@ fun App() = AppTheme {
         }
     }
 }
-```
-
-## Android
-- with using dp
-
-- with using sdp
-
-## iOS
-- with using dp
-
-- with using sdp
 
 
-- For More Follow This Class -> [App.kt](www.google.com)
-
-- Follow Medium Link for example -> [App.kt](www.google.com)
-
-- Follow LinkedIn For More Updates -> [Mobile Innovation Network](https://www.linkedin.com/showcase/mobile-innovation-network)
 
