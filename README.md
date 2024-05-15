@@ -84,24 +84,22 @@ fun App() = AppTheme {
 ```
 
 ## Android
-- with using dp
+- Layout built using "dp & sp"
 ![Android-dp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/7e17107e-e987-47d8-94bb-450d91e0b258)
 
-
-- with using sdp
+- Layout built using "sdp & ssp"
 ![Android-sdp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/a69a009e-911f-4b6b-ba7d-4e4790a76cb9)
 
 
 ## iOS
-- with using dp
+- Layout built using "dp & sp"
 ![iOS-dp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/6a712216-1fe8-43f9-b510-278c41002c3e)
 
-
-- with using sdp
+- Layout built using "sdp & ssp"
 ![iOS-sdp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/4c823d31-4a78-42ff-b270-de58eea0e994)
 
 
-
-- For More Follow This Class -> [App.kt](www.google.com)
-- Follow LinkedIn For More Updates -> [Mobile Innovation Network](https://www.linkedin.com/showcase/mobile-innovation-network)
+- For Demo [Checkout This Class](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/blob/main/composeApp/src/commonMain/kotlin/network/chaintech/sdpcomposemultiplatformdemo/App.kt)
+- [Medium Article](https://medium.com/mobile-innovation-network/sdp-ssp-compose-multiplatform-99ad7969c146) for detailed explaination.
+- Connect us on [LinkedIn](https://www.linkedin.com/showcase/mobile-innovation-network)
 
