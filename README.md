@@ -10,7 +10,7 @@ Add the dependency to your `build.gradle.kts` file:
 
 ```
 commonMain.dependencies {
-    implementation("network.chaintech:sdp-ssp-compose-multiplatform:1.0.1")
+    implementation("network.chaintech:sdp-ssp-compose-multiplatform:1.0.4")
 }
 ```
 
@@ -97,6 +97,10 @@ fun App() = AppTheme {
 
 - Layout built using "sdp & ssp"
 ![iOS-sdp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/4c823d31-4a78-42ff-b270-de58eea0e994)
+
+## Desktop
+- Layout bulit using "sdp & ssp"
+![sdp_ssp_desktop_cmp](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/21ba004f-7d24-4376-9120-2d580daf5fdb)
 
 
 - For Demo [Checkout This Class](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/blob/main/composeApp/src/commonMain/kotlin/network/chaintech/sdpcomposemultiplatformdemo/App.kt)
