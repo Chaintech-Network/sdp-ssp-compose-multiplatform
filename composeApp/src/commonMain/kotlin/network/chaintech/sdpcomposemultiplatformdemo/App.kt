@@ -20,7 +20,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -30,7 +29,6 @@ import network.chaintech.sdpcomposemultiplatformdemo.theme.AppTheme
 import org.jetbrains.compose.resources.painterResource
 import sdp_compose_multiplatform_demo.composeapp.generated.resources.Res
 import sdp_compose_multiplatform_demo.composeapp.generated.resources.ic_user
-import sdp_compose_multiplatform_demo.composeapp.generated.resources.img_jetpack_compose
 
 @Composable
 internal fun App() = AppTheme {

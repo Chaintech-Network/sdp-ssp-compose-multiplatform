@@ -6,6 +6,7 @@ import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSetTree
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.compose)
+    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.android.application)
 }
 
@@ -39,6 +40,8 @@ kotlin {
         }
     }
 
+    jvm()
+
     sourceSets {
         all {
             languageSettings {
@@ -68,6 +71,9 @@ kotlin {
         iosMain.dependencies {
         }
 
+        jvmMain.dependencies {
+            implementation(compose.desktop.currentOs)
+        }
     }
 }
 
