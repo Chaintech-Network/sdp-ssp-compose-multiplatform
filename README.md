@@ -1,7 +1,7 @@
 # SDP-SSP-Compose-Multiplatform
 A scalable size unit for Compose Multiplatform for Android & iOS App
 
-![SDP Compose Multiplatform](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/caa8be98-e813-4714-afb6-9e5e41c62bc5)
+<img width="960" alt="sdp-ssp-compose-multiplatform" src="https://github.com/Chaintech-Network/sdp-ssp-compose-multiplatform/assets/143475887/3a6bfb09-2bae-45ac-8822-c726a35c82df">
 
 
 ## Installation
