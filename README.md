@@ -1,8 +1,16 @@
 # SDP-SSP-Compose-Multiplatform
-A scalable size unit for Compose Multiplatform for Android & iOS App
+[![Maven Central](https://img.shields.io/maven-central/v/network.chaintech/sdp-ssp-compose-multiplatform.svg)](https://central.sonatype.com/artifact/network.chaintech/sdp-ssp-compose-multiplatform)
+[![Kotlin](https://img.shields.io/badge/kotlin-v2.1.0-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Compose Multiplatform](https://img.shields.io/badge/Compose%20Multiplatform-v1.7.3-blue)](https://github.com/JetBrains/compose-multiplatform)
 
-<img width="960" alt="sdp-ssp-compose-multiplatform" src="https://github.com/Chaintech-Network/sdp-ssp-compose-multiplatform/assets/143475887/3a6bfb09-2bae-45ac-8822-c726a35c82df">
+![badge-android](http://img.shields.io/badge/platform-android-3DDC84.svg?style=flat)
+![badge-ios](http://img.shields.io/badge/platform-ios-FF375F.svg?style=flat)
+![badge-desktop](http://img.shields.io/badge/platform-desktop-FF9500.svg?style=flat)
+![badge-desktop](http://img.shields.io/badge/platform-wasm-42F59E.svg?style=flat)
 
+A scalable size unit for Compose Multiplatform for iOS, Android, Desktop & Wasm
+
+![git-banner](./assets/git-banner.png)
 
 ## Installation
 
@@ -10,7 +18,7 @@ Add the dependency to your `build.gradle.kts` file:
 
 ```
 commonMain.dependencies {
-    implementation("network.chaintech:sdp-ssp-compose-multiplatform:1.0.4")
+    implementation("network.chaintech:sdp-ssp-compose-multiplatform:1.0.5")
 }
 ```
 
