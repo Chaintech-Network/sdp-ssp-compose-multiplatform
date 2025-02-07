@@ -8,11 +8,28 @@
 ![badge-desktop](http://img.shields.io/badge/platform-desktop-FF9500.svg?style=flat)
 ![badge-desktop](http://img.shields.io/badge/platform-wasm-42F59E.svg?style=flat)
 
-A scalable size unit for Compose Multiplatform for iOS, Android, Desktop & Wasm
+**SDP-SSP-Compose-Multiplatform** is a scalable size unit library designed specifically for Compose Multiplatform projects. It enables consistent UI scaling across iOS, Android, Desktop, and WebAssembly (Wasm), ensuring a seamless user experience on different screen sizes and resolutions.
+
+This library eliminates the traditional reliance on fixed dp (density-independent pixels) and sp (scale-independent pixels) by introducing sdp (scalable dp) and ssp (scalable sp) units. These units dynamically adjust based on screen density, making layouts more adaptive and ensuring better usability across platforms.
 
 ![git-banner](./assets/git-banner.png)
 
-## Installation
+## 🎉 What's New in Version 1.0.5
+* 🔥 **WasmJs Support:** Added WebAssembly (Wasm) support.
+
+## 🚀 Key Features
+
+**Compose Multiplatform Support:** Works across Android, iOS, Desktop, and WebAssembly (Wasm).
+
+**Adaptive UI Scaling:** Uses sdp and ssp to automatically adjust sizes based on screen density.
+
+**Easy to Integrate:** Simple API that seamlessly integrates with existing Jetpack Compose projects.
+
+**Consistent Layouts:** Ensures UI consistency across multiple screen sizes and platforms.
+
+**No Additional Setup Required:** Works out-of-the-box without complex configurations.
+
+## 📦 Installation
 
 Add the dependency to your `build.gradle.kts` file:
 
@@ -22,96 +39,48 @@ commonMain.dependencies {
 }
 ```
 
-## Usage
-
+## 🎨 Usage
+Use **sdp** and **ssp** for adaptive and scalable UI components:
 ```kotlin
-@Composable
-fun App() = AppTheme {
-    Box(
-        modifier = Modifier
-            .statusBarsPadding()
-            .fillMaxSize()
-            .background(Color.White),
-        contentAlignment = Alignment.Center
-    ) {
-        Card(
-            modifier = Modifier.fillMaxWidth(0.82f),
-            shape = RoundedCornerShape(16.sdp),
-            colors = CardDefaults.cardColors(Color(0xFFFBF3E8)),
-        ) {
-            Column(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalAlignment = Alignment.CenterHorizontally,
-            ) {
-                Column(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .background(Color(0xFF585DDB))
-                        .padding(vertical = 16.sdp),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                ) {
-                    Image(
-                        modifier = Modifier
-                            .size(80.sdp),
-                        painter = painterResource(Res.drawable.ic_user),
-                        contentDescription = null,
-                        contentScale = ContentScale.FillBounds
-                    )
+val padding = 16.sdp
+val fontSize = 14.ssp
 
-                    Text(
-                        text = "Emily Dounger",
-                        fontSize = 16.ssp,
-                        color = Color.White,
-                        fontWeight = FontWeight.Bold,
-                        modifier = Modifier.padding(top = 12.sdp)
-                    )
-                }
-
-                Text(
-                    text = "Hi there \uD83D\uDC4B , We are Boards to share initital Goals and ideas.",
-                    fontSize = 14.ssp,
-                    textAlign = TextAlign.Center,
-                    color = Color.Black,
-                    lineHeight = 18.ssp,
-                    fontWeight = FontWeight.Bold,
-                    modifier = Modifier.padding(top = 30.sdp).padding(horizontal = 20.sdp)
-                )
-
-                Button(
-                    onClick = {},
-                    colors = ButtonDefaults.buttonColors(Color(0xFF007AFF)),
-                    modifier = Modifier.padding(top = 24.sdp, bottom = 20.sdp)
-                        .padding(horizontal = 20.sdp).fillMaxWidth().height(40.sdp)
-                ) {
-                    Text(text = "Say Hello", fontSize = 16.ssp)
-                }
-            }
-        }
-    }
+Box(modifier = Modifier.padding(padding)) {
+    Text(text = "Hello, World!", fontSize = fontSize)
 }
 ```
+This ensures a consistent and adaptive layout across all supported platforms.
 
-## Android
-- Layout built using "dp & sp"
-![Android-dp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/7e17107e-e987-47d8-94bb-450d91e0b258)
+## 📱 Platform-Specific Comparisons
 
-- Layout built using "sdp & ssp"
-![Android-sdp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/a69a009e-911f-4b6b-ba7d-4e4790a76cb9)
+### Android
+- Layout built using **dp & sp**
+![Android-dp-banner](./assets/android-dp.png)
 
+- Layout built using **sdp & ssp**
+![Android-sdp-banner](./assets/android-sdp.png)
 
-## iOS
-- Layout built using "dp & sp"
-![iOS-dp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/6a712216-1fe8-43f9-b510-278c41002c3e)
+### iOS
+- Layout built using **dp & sp**
+![iOS-dp-banner](./assets/ios-dp.png)
 
-- Layout built using "sdp & ssp"
-![iOS-sdp-banner](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/4c823d31-4a78-42ff-b270-de58eea0e994)
+- Layout built using **sdp & ssp**
+![iOS-sdp-banner](./assets/ios-sdp.png)
 
-## Desktop
-- Layout bulit using "sdp & ssp"
-![sdp_ssp_desktop_cmp](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/assets/143475887/21ba004f-7d24-4376-9120-2d580daf5fdb)
+### Desktop
+- Layout bulit using **sdp & ssp**
+![sdp_ssp_desktop_cmp](./assets/desktop-sdp.png)
 
+### WasmJs
+- Layout bulit using **sdp & ssp**
+  ![sdp_ssp_wasm_cmp](./assets/wasm-sdp.png)
 
-- For Demo [Checkout This Class](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/blob/main/composeApp/src/commonMain/kotlin/network/chaintech/sdpcomposemultiplatformdemo/App.kt)
-- [Medium Article](https://medium.com/mobile-innovation-network/sdp-ssp-compose-multiplatform-99ad7969c146) for detailed explaination.
-- Connect us on [LinkedIn](https://www.linkedin.com/showcase/mobile-innovation-network)
+## 📚 Additional Resources
+[Demo Implementation](https://github.com/ChainTechNetwork/sdp-ssp-compose-multiplatform/blob/main/composeApp/src/commonMain/kotlin/network/chaintech/sdpcomposemultiplatformdemo/App.kt) - Check out the demo class to see the library in action.
+
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/mobile-innovation-network/sdp-ssp-compose-multiplatform-99ad7969c146)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/showcase/mobile-innovation-network)
+
+## 🌟 If you find this library useful, consider starring ⭐ the repository to show your support!
 
