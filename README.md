@@ -14,9 +14,6 @@ This library eliminates the traditional reliance on fixed dp (density-independen
 
 ![git-banner](./assets/git-banner.png)
 
-## 🎉 What's New in Version 1.0.5
-* 🔥 **WasmJs Support:** Added WebAssembly (Wasm) support.
-
 ## 🚀 Key Features
 
 **Compose Multiplatform Support:** Works across Android, iOS, Desktop, and WebAssembly (Wasm).
@@ -35,8 +32,14 @@ Add the dependency to your `build.gradle.kts` file:
 
 ```
 commonMain.dependencies {
-    implementation("network.chaintech:sdp-ssp-compose-multiplatform:1.0.5")
+    implementation("network.chaintech:sdp-ssp-compose-multiplatform:1.0.6")
 }
+```
+## ⚙️ Customizing the Scaling Ratio
+By default, the library uses a scaling ratio of 300 for .sdp and .ssp values. You can change this to fit your design needs using:
+```kotlin
+SDPConfig.setScalingRatio(250.0) // Set a custom ratio
+
 ```
 
 ## 🎨 Usage

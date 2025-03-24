@@ -4,7 +4,7 @@ kotlin = "2.1.0"
 compose = "1.7.3"
 agp = "8.2.2"
 androidx-activityCompose = "1.10.0"
-sdpComposeMultiplatform = "1.0.5"
+sdpComposeMultiplatform = "1.0.6"
 
 [libraries]
 
